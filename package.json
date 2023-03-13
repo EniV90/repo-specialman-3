@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "typeface-poppins": "^1.1.13",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

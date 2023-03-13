@@ -5,8 +5,11 @@ module.exports = {
     extend: {},
     container: {
       center: true,
-      padding: '2rem',
-    }
+      padding: "2rem",
+    },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
   },
   plugins: [],
 };

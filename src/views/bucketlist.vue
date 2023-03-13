@@ -13,8 +13,8 @@
     <ul class="md:flex md:items-center md:mx-10">
         <li class="md:mx-4">
              <div class="flex items-center justify-center">
-        <button class="bg-[#5271ff] text-white font-bold py-2 px-20 rounded focus:outline-none focus:shadow-outline" type="button" @click="login">
-          Login
+        <button class="bg-[#5271ff] text-white py-4 px-20 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" @click="login">
+          Add Item
         </button>
       
       </div>
@@ -120,8 +120,8 @@
 </div>
 
 </div>
- <div class="flex items-center justify-center mt-10 mb-10">
-        <button class="bg-[#5271ff] text-white font-bold py-2 px-20 rounded focus:outline-none focus:shadow-outline" type="button" @click="login">
+ <div class="flex items-center justify-center mt-10 mb-24">
+        <button class="bg-[#5271ff] text-white py-4 px-20 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" @click="login">
           Load More
         </button>
       

@@ -1,13 +1,13 @@
 <template>
 <Header />
 
-  <div class="flex justify-center items-center h-screen">
+  <div class="flex justify-center items-center mt-40">
     <form class="w-full max-w-md ">
-      <h2 class="text-4xl text-black-800 font-bold mb-4">Create an account,</h2>
+      <h2 class="text-4xl text-black-800 font-bold mb-6 font-sans">Create an account,</h2>
       
      
       <div class="mb-5">
-        <label class="block text-gray-700  mb-2" for="name">
+        <label class="block text-gray-700 mb-2" for="name">
           Fullname
         </label>
         <input
@@ -40,7 +40,7 @@
         />
       </div>
       <div class="flex items-center justify-center">
-        <button class="bg-[#5271ff] text-white font-bold py-2 px-20 rounded focus:outline-none focus:shadow-outline" type="button" @click="login">
+        <button class="bg-[#5271ff] text-white font-bold py-2 px-20 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" @click="login">
           Create
         </button>
       
