@@ -1,16 +1,16 @@
 <template>
-  <div class="bg-[#008289] text-white p-4 md:flex justify-between items-center border-[#707070] " >
-    <div class="flex items-center md:mx-10 italic font-bold">
+  <div class="bg-[#008289] text-white p-4 md:flex justify-between items-center border-[#707070]" >
+    <div class="flex items-center md:mx-10">
         <h1>Eventful Moments.</h1>
     </div>
 
     <ul class="md:flex md:items-center md:mx-10">
         <li class="md:mx-4">
-            <a href="#">Login</a>
+            <a href="#">Logout</a>
             
         </li>
         <li class="md:mx-4">
-            <a href="#">Register</a>
+            <a href="#">My Bucket</a>
             
         </li>
     </ul>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'Header2',
  
 }
 </script>

@@ -1,11 +1,35 @@
-<script setup>
-
-</script>
-
 <template>
- <div class="text-3xl font-bold underline"> Hello with tailwind</div>
+ <Login />
+ <!-- <bucketlist /> -->
+ <!-- <singleitem /> -->
+ <!-- <additem /> -->
+ <!-- <edititem /> -->
+ <!-- <register /> -->
+ <div class="container">
+<router-view />
+ </div>
+ 
 </template>
 
-<style scoped>
+<script>
+import bucketlist from './views/bucketlist.vue'
+import Login from './views/login.vue'
+import singleitem from './views/singleitem.vue'
+import additem from './views/additem.vue'
+import edititem from './views/edititem.vue'
+import register from './views/register.vue'
 
-</style>
+export default {
+    components: {
+        Login,
+        bucketlist,
+        singleitem,
+        additem,
+        edititem,
+        register,
+        
+    },
+}
+</script>
+
+
