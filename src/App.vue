@@ -1,14 +1,8 @@
 <template>
- <Login />
- <!-- <bucketlist /> -->
- <!-- <singleitem /> -->
- <!-- <additem /> -->
- <!-- <edititem /> -->
- <!-- <register /> -->
- <div class="container">
-<router-view />
+<div class="container">
+
  </div>
- 
+ <router-view />
 </template>
 
 <script>
