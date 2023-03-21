@@ -59,7 +59,7 @@
   </div>
       </div>
       </div>
-     <div v-for="moment in moments" :key="moment.id">
+     
         <div class="flex justify-center mt-10">
     <div class="grid grid-cols-2 gap-8">
       <div class="w-full max-w-2xl p-8 bg-[#FFF5A7] rounded-mg shadow-lg">
@@ -85,7 +85,7 @@
   </div>
       </div>
       </div>
-     <div v-for="moment in moments" :key="moment.id">
+    
         <div class="flex justify-center mt-10">
     <div class="grid grid-cols-2 gap-8">
       <div class="w-full max-w-2xl p-8 bg-[#FFF5A7] rounded-mg shadow-lg">
@@ -111,7 +111,7 @@
   </div>
       </div>
       </div>
-     <div v-for="moment in moments" :key="moment.id">
+    
         <div class="flex justify-center mt-10">
     <div class="grid grid-cols-2 gap-8">
       <div class="w-full max-w-2xl p-8 bg-[#FFF5A7] rounded-mg shadow-lg">
@@ -150,7 +150,9 @@
       
       </div>
     </div>
-      </div>
+    </div>
+    </div>
+    </div>
 <h2 v-if="!user">Login to view page</h2>
 
       <Footer1 />

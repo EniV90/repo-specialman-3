@@ -4,7 +4,7 @@ import App from './App.vue'
 import "typeface-poppins";
 import router from './router'
 import './axios'
-import store from "./store"
+import container from './container'
 
-createApp(App).use(router).use(store).mount('#app')
+createApp(App).use(router).use(container).mount('#app')
 

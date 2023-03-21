@@ -28,7 +28,7 @@ const routes = [
     },
     
     {
-        path: 'new-item',
+        path: '/new-item',
         name:"additems",
         component: additem
     },

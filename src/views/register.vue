@@ -2,7 +2,7 @@
 <Header />
 
   <div class="flex justify-center items-center mt-40">
-    <form @submit.prevent="handleregister" class="w-full max-w-md " >
+    <form  class="w-full max-w-md " >
       <h2 class="text-4xl text-black-800 font-bold mb-6 font-sans">Create an account,</h2>
       
      
@@ -40,7 +40,7 @@
         />
       </div>
       <div class="flex items-center justify-center">
-        <button class="bg-[#5271ff] text-white font-bold py-2 px-20 rounded-[10px] focus:outline-none focus:shadow-outline" type="button">
+        <button class="bg-[#5271ff] text-white font-bold py-2 px-20 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" @click.prevent="handleregister">
           Create
         </button>
       

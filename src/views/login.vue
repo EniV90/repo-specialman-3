@@ -2,7 +2,7 @@
 <Header />
 
   <div class="flex mt-40 justify-center items-center ">
-    <form @submit.prevent="handleSubmit">
+    <form >
       <h2 class="text-4xl font-bold mb-4">Welcome back,</h2>
       <p class="w-full max-w-md   ">Hi, my name is Eventful Moments, I am a bucket… no, not the bucket of water but I store awesome moments you will like to have in coming years.</p>
       <div class="mb-4 py-5">
@@ -28,7 +28,7 @@
         />
       </div>
       <div class="flex items-center justify-center">
-        <button class="bg-[#5271ff] text-white py-2 px-16 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" >
+        <button class="bg-[#5271ff] text-white py-2 px-16 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" @click.prevent="handleSubmit">
           Login
         </button>
       
