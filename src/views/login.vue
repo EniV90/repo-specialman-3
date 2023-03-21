@@ -2,7 +2,7 @@
 <Header />
 
   <div class="flex mt-40 justify-center items-center ">
-    <form >
+    <form @submit.prevent="handleSubmit">
       <h2 class="text-4xl font-bold mb-4">Welcome back,</h2>
       <p class="w-full max-w-md   ">Hi, my name is Eventful Moments, I am a bucket… no, not the bucket of water but I store awesome moments you will like to have in coming years.</p>
       <div class="mb-4 py-5">
@@ -28,7 +28,7 @@
         />
       </div>
       <div class="flex items-center justify-center">
-        <button class="bg-[#5271ff] text-white py-2 px-16 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" @click="login">
+        <button class="bg-[#5271ff] text-white py-2 px-16 rounded-[10px] focus:outline-none focus:shadow-outline" type="button" >
           Login
         </button>
       
@@ -42,8 +42,10 @@
 
 import Footer1 from '../components/Footer1.vue'
 import Header from '../components/Header.vue'
-
+import Errors from '../components/Errors.vue'
+import axios from 'axios'
 export default {
+  name: 'login',
   data() {
     return {
       email: '',
@@ -55,9 +57,20 @@ export default {
      Header,
   },
   methods: {
-    login() {
-      console.log(`Email: ${this.email}, Password: ${this.password}`);
+    
+    async handleSubmit() {
+      
+      const response = await axios.post('users/login', {
+        email: this.email,
+        password: this.password
+      })
+
+      localStorage.setItem('token', response.data.token)
+        this.$store.dispatch('user', response.data.user)
+
+      this.$router.push('/bucketlist')
     }
   }
 }
 </script>
+

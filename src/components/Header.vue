@@ -6,11 +6,11 @@
 
     <ul class="md:flex md:items-center md:mx-10">
         <li class="md:mx-4">
-            <a href="#">Login</a>
+            <router-link to="/">Login</router-link>
             
         </li>
         <li class="md:mx-4">
-            <a href="#">Register</a>
+            <router-link to="/register">Register</router-link>
             
         </li>
     </ul>

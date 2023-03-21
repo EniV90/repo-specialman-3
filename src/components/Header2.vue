@@ -6,7 +6,7 @@
 
     <ul class="md:flex md:items-center md:mx-10 ">
         <li class="md:mx-4">
-            <a href="#">Logout</a>
+            <router-link to="/">Logout</router-link>
             
         </li>
         <li class="md:mx-4">
